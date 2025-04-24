@@ -1,0 +1,115 @@
+body {
+    background: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+/* Main panel */
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.main-panel {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    
+
+
+
+}
+
+.outline {
+    outline: lime 2px solid;
+}
+
+input {
+    background: none;
+    border: lime 2px solid;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button, button:active {
+    padding: 0.5rem;
+    margin: 0.2rem;
+    background-color: black;
+    color: lime;
+    font-family:'Courier New', Courier, monospace;
+    border: 2px lime dashed;
+}
+
+button:hover {
+    background-color: lime;
+    color: black;
+    cursor: pointer;
+}
+
+
+#all-accounts {
+    display: flex;
+
+    height: 100%;
+
+    padding: 2rem;
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#all-accounts ul {
+    text-align: center;
+}
+
+#account-viewer {
+
+    display: none;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: span 3;
+
+    text-align: center;
+
+    padding: 2rem;
+}
+
+#account-viewer h3 {
+    font-size: 1.5rem;
+}
+
+#account-viewer h4 {
+    font-size: 3rem;
+}

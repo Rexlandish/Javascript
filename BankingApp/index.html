@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="main-panel outline">
+            <h1>Welcome, Banking Admin</h1>
+        </div>
+        <div id="all-accounts" class="outline">
+            <h3>Account Names:</h3>
+            
+        </div>
+        <div id="account-viewer" class="outline">
+            <h3 id="account-name-number">ACCOUNT NAME / ACCOUNT NUMBER</h3>
+            <h4 id="account-balance">BALANCE</h4>
+            <div class="account-actions">
+                <div class="withdraw">
+                    <input type="number"><button onclick="withdraw(this)">WITHDRAW</button>
+                </div>
+                <div class="deposit">
+                    <input type="number"><button onclick="deposit(this)">DEPOSIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>

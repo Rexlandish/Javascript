@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: purple;
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+
+    background-color: pink;
+    border: none;
+    border-radius: 5rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 5px rgb(96, 0, 88);
+}
+
+button:hover {
+    background-color: palevioletred;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: purple;
+}
+
+#cpm {
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <button id="button-container" onclick="increaseButtonCount();">
+            <h1 id="click-message">Click Me!</h1>
+        </button>
+        <h1 id="clicks-per-second">d</h1>
+    </div>
+
+
+    
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
