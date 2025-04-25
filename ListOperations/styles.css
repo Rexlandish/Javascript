@@ -1,0 +1,73 @@
+body, button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #EEE;
+}
+
+button {
+    border: none;
+    background-color: #CCC;
+}
+
+button:hover {
+    background-color: #AAA;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 20rem;
+    margin: 2rem auto;
+}
+
+.controls div {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+}
+
+input {
+    width: 5rem;
+}
+
+.controls button {
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.array-elements {
+    display: flex;
+    flex-wrap:wrap
+}
+
+.number-overlay {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 3rem;
+    color: #000000;
+    transform: translate(-50%, 0);
+}
+
+
+.array-elements div {
+    position: relative;
+}
+
+.number-container {
+    height: max-content;
+}
+
+p {
+    margin: 0;
+}
