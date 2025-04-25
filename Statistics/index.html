@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="input-area">
+        <textarea placeholder="Enter space separated values..."></textarea>
+        <button onclick="calculateValues()">Calculate</button>
+    </div>
+
+    <div class="operation-grid">
+
+        <div class="operation mean">
+    
+            <div class="definition">
+                <h1>Mean</h1>
+                <h2>Average of all numbers (to&nbsp;2dp)</h2>
+            </div>
+            <div class="value">
+                <h1>?.??</h1>
+            </div>
+    
+        </div>
+    
+        <div class="operation median">
+            
+            <div class="definition">
+                <h1>Median</h1>
+                <h2>Middle datapoint of the ordered values</h2>
+            </div>
+            <div class="value">
+                <h1>?.??</h1>
+            </div>
+    
+        </div>
+    
+        <div class="operation mode">
+            
+            <div class="definition">
+                <h1>Mode</h1>
+                <h2>Most common value(s)</h2>
+            </div>
+            <div class="value">
+                <h1>?.??</h1>
+            </div>
+        </div>
+
+        <div class="operation std-dev">
+            
+            <div class="definition">
+                <h1>Standard Deviation</h1>
+                <h2>How far apart the values are from each other.<br>~68% of the values will be within one standard deviation from the mean.</h2>
+            </div>
+            <div class="value">
+                <h1>?.??</h1>
+            </div>
+        </div>
+
+        <div class="operation variance">
+            
+            <div class="definition">
+                <h1>Variance</h1>
+                <h2>How much the values differ from the mean.</h2>
+            </div>
+            <div class="value">
+                <h1>?.??</h1>
+            </div>
+        </div>
+
+        <div class="operation iqr">
+            
+            <div class="definition">
+                <h1>Interquartile Range</h1>
+                <h2>The spread of the middle 50% of the data.</h2>
+            </div>
+            <div class="value">
+                <h1>?.??</h1>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
