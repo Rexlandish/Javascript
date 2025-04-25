@@ -1,0 +1,291 @@
+:root {
+    --regular-1: #EFEEEA;
+    --regular-2: #FE7743;
+    --regular-3: #273F4F;
+    --regular-4: #000000;
+
+    --neon-0: white;
+    --neon-1: #31E1F7;
+    --neon-2: #FF7777;
+    --neon-3: #D800A6;
+    --neon-4: #400D51;
+    --neon-5: #111;
+}
+
+/* Theme Independent */
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+}
+
+body.neon-theme, body.regular-theme {
+    padding-top: 5rem;
+}
+
+body.plain-theme {
+    padding-top: 0;
+}
+
+.regular-theme header {
+    background-color: var(--regular-1);
+}
+
+.neon-theme header {
+    background-color: var(--neon-4);
+}
+
+.plain-theme header {
+    background-color: #00000000;
+}
+
+header ul {
+    padding: 0 1rem;
+}
+
+header li {
+    display: inline;
+}
+
+/* Regular theme */
+body.regular-theme {
+
+    background-color: var(--regular-3);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.regular-theme .dictionary-entry-container {
+    background-color: var(--regular-1);
+    color: var(--regular-4);
+    padding: 1rem;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+}
+
+.regular-theme h1 {
+    font-size: 3rem;
+    text-decoration: underline 3px;
+}
+
+.regular-theme h2 {
+    background-color: var(--regular-3);
+    width: max-content;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+
+    color: var(--regular-1);
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.regular-theme h3 {
+    color: var(--regular-2);
+}
+
+.regular-theme .definition-note {
+    font-style: italic;
+    color: grey;
+}
+
+.regular-theme h1 {
+    text-align: center;
+}
+
+.regular-theme .navigation {
+    display: block;
+    width: max-content;
+    background-color: var(--regular-2);
+    color: var(--regular-1);
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.regular-theme .last-page {
+    float: left;
+}
+
+.regular-theme .next-page {
+    float: right;
+}
+
+.regular-theme .dictionary-entry {
+    display: flex;
+    gap: 4rem;
+}
+
+.regular-theme .examples {
+    align-self: center;
+    justify-self: center;
+    font-style: italic;
+    color: var(--regular-3);
+}
+
+.regular-theme li span {
+    font-style: italic;
+    color: var(--regular-3);
+    font-size: 0.9rem;
+}
+
+
+
+.regular-theme .dictionary-entry {
+    border-bottom: 1px black solid;
+    padding: 1rem;
+}
+
+.regular-theme .meaning {
+    width: 20rem;
+    flex-grow: 1;
+}
+
+.regular-theme .examples {
+    width: 10rem;
+    font-size: 1.2rem;
+}
+
+.regular-theme .examples {
+    padding-left: 1rem;
+    border-left: solid 1px black;
+}
+
+.dictionary-entry-container {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin: auto;
+    justify-content: center;
+}
+
+/* Plain theme */
+
+body.plain-theme {
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.plain-theme .dictionary-entry-container {
+    gap: 1rem;
+}
+
+.plain-theme .examples {
+    font-size: 0.9rem;
+    width: auto;
+}
+
+.plain-theme .dictionary-entry {
+    margin: 0.8rem 0;
+}
+
+.plain-theme .word {
+    font-size: 2rem;
+}
+
+.plain-theme h2, .plain-theme h3{
+    margin: 0;
+}
+
+.plain-theme ol {
+    margin: 1rem;
+}
+
+.plain-theme .definition-note {
+    font-style: italic;
+}
+
+.plain-theme h1 {
+    font-size: 3rem;
+}
+
+.plain-theme li span {
+    text-decoration: underline;
+}
+
+.plain-theme .navigation-container {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.plain-theme hr {
+    display: none;
+}
+
+/* Neon theme */
+
+body.neon-theme {
+    background-color: var(--neon-5);
+    color: var(--neon-1);
+    font-family: "Tektur", sans-serif;
+}
+
+.neon-theme hr {
+    display: none;
+}
+
+.neon-theme .dictionary-entry-container {
+    gap: 2rem;
+}
+
+.neon-theme .dictionary-entry {
+    background-color: var(--neon-4);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.neon-theme h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+.neon-theme h2 {
+    color: var(--neon-0);
+    text-shadow: 0rem 0rem 2rem var(--neon-3);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.neon-theme li, .neon-theme .definition {
+    text-shadow: 0rem 0rem 5rem var(--neon-1);
+}
+
+.neon-theme .definition {
+    text-decoration: underline;
+}
+
+.neon-theme ol {
+    font-size: 1.2rem;
+}
+
+.neon-theme .examples {
+    color: var(--neon-0);
+    text-shadow: 0 0 10px var(--neon-1);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.neon-theme a {
+    color: var(--neon-0);
+}
+
+.neon-theme .navigation-container {
+    display: flex;
+    justify-content: center;
+}
+
+.neon-theme .navigation {
+    text-align: center;
+    margin: 1rem;
+}
