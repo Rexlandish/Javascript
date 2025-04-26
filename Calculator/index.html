@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="cover">
+        <button onclick="begin()">BEGIN</button>
+    </div>
+
+    <div class="calculator">
+        <div class="buttons">
+            <div class="input-1">
+                <p class="output">
+                    
+                </p>
+            </div>
+            <div class="operation">
+                <p class="output">
+                    
+                </p>
+            </div>
+            <div class="input-2">
+                <p class="output">
+                    
+                </p>
+            </div>
+            <button class="arrow-button up" onmousedown="press('^')">^</button>
+            <button class="number-button" onmousedown="press(7)">7</button><button class="number-button" onmousedown="press(8)">8</button><button class="number-button" onmousedown="press(9)">9</button><button class="op-button" onmousedown="press('/')">/</button><button class="ce-button" onmousedown="press('CE')">CE</button>
+            <button class="number-button" onmousedown="press(4)">4</button><button class="number-button" onmousedown="press(5)">5</button><button class="number-button" onmousedown="press(6)">6</button><button class="op-button" onmousedown="press('*')">x</button>
+            <button class="arrow-button down" onmousedown="press('v')">v</button>
+            <button class="number-button" onmousedown="press(1)">1</button><button class="number-button" onmousedown="press(2)">2</button><button class="number-button" onmousedown="press(3)">3</button><button class="op-button" onmousedown="press('-')">-</button></button><button class="c-button" onmousedown="press('C')">C</button>
+            <button class="number-button zero-button" onmousedown="press(0)">0</button><button class="eq-button" onmousedown="press('=')">=</button><button class="op-button" onmousedown="press('+')">+</button>
+        </div>
+    </div>
+
+
+    
+    <div class="display">
+        <p class="output">
+            
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.2.1/math.min.js"></script>
+    <script src="loopify.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
