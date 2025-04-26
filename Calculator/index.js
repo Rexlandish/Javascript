@@ -32,8 +32,14 @@ let equalsSounds = ["Audio/Equals/Equals-1.ogg", "Audio/Equals/Equals-2.ogg", "A
 
 async function EqualsProcedure() {
 
-
-        const result = operationFunctions[currentOperation](calculatorInputs[0], calculatorInputs[1]);
+        
+        let result;
+        if (calculatorInputs[1] = 0) {
+            result = operationFunctions[currentOperation](calculatorInputs[0], calculatorInputs[1]);
+        }
+        else {
+            result = "No dividing by zero."
+        }
 
         equalsVersion++;
         if (equalsVersion >= 4) equalsVersion = 0;
