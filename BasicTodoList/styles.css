@@ -1,0 +1,13 @@
+h3 {
+    margin: 0.5rem 0;
+}
+
+.task-display {
+    width: max-content;
+}
+
+.task {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
