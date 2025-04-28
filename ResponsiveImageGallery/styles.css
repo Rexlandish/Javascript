@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#url-input {
+
+}
+
+.input-area {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 5rem black;
+    z-index: 3;
+}
+
+#add-image-button {
+
+}
+
+#image-display {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    margin: 0;
+    aspect-ratio: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.image-container {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.remove-button {
+
+    position: absolute;
+    
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    width: max-content;
+    
+    padding: 1rem;
+    
+    background-color: red;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    
+    z-index: 2;
+
+
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.remove-button:hover {
+    background-color: rgb(129, 0, 0);
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
