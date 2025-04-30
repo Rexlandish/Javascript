@@ -34,9 +34,9 @@ async function EqualsProcedure() {
 
         
         let result;
+        result = operationFunctions[currentOperation](calculatorInputs[0], calculatorInputs[1]);
         /*
         if (calculatorInputs[1] != 0) {
-            result = operationFunctions[currentOperation](calculatorInputs[0], calculatorInputs[1]);
         }
         else {
             result = "No dividing by zero."
